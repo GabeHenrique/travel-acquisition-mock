@@ -2,13 +2,10 @@ import { Column, Entity, PrimaryColumn, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
 export class CountryEntity {
-  @PrimaryGeneratedColumn()
-  id: string;
-
-  @Column()
+  @PrimaryColumn()
   product_id: string;
 
-  @Column()
+  @PrimaryColumn()
   alpha: string;
 
   @Column()
